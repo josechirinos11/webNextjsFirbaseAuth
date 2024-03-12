@@ -1,0 +1,20 @@
+npm i formik
+npm i yup
+npm i firebase
+
+
+en la carpeta firabe esta toda la configuracion
+para propagar por todo la app importamos 
+import firebase, { FirebaseContext } from "../firebase/firebase";
+en el archivo donde estan la raiz de todo
+en este caso el layaot 
+
+
+en firebase en reglas cambiar a true si es necesario: 
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
